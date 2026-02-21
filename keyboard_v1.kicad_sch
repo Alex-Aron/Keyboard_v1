@@ -11,6 +11,179 @@
 		(company "KeyConnect ")
 	)
 	(lib_symbols
+		(symbol "74xGxx:74AHCT1G125"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74AHCT1G125"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Gate Buff Tri-State LVC CMOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT* SG-*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74AHCT1G125_0_1"
+				(polyline
+					(pts
+						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74AHCT1G125_1_1"
+				(pin input line
+					(at -15.24 0 0)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at 0 10.16 270)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
 				(offset 1.016)
@@ -1727,6 +1900,261 @@
 						)
 					)
 					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LED:WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5345,7 +5773,7 @@
 		(uuid 34f22948-56c5-475e-88ef-cd55c8b42e4a)
 	)
 	(rectangle
-		(start 72.39 121.92)
+		(start 30.48 121.92)
 		(end 171.45 231.14)
 		(stroke
 			(width 0)
@@ -5379,6 +5807,18 @@
 			(type none)
 		)
 		(uuid 8b1a3475-ad15-4dde-9277-9a24a6970af1)
+	)
+	(rectangle
+		(start 274.32 167.64)
+		(end 388.62 213.36)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 97852fde-43f6-4a0c-a096-8568fff27255)
 	)
 	(rectangle
 		(start 190.5 15.24)
@@ -5441,8 +5881,8 @@
 		(uuid d4fb8e40-c59f-4b86-968f-7e87836a81b5)
 	)
 	(rectangle
-		(start 173.355 168.275)
-		(end 273.05 212.09)
+		(start 173.355 167.64)
+		(end 271.78 213.36)
 		(stroke
 			(width 0)
 			(type default)
@@ -5488,7 +5928,7 @@
 	)
 	(text "RP2040 Flash Mem\n"
 		(exclude_from_sim no)
-		(at 185.928 171.958 0)
+		(at 185.674 210.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5518,7 +5958,7 @@
 	)
 	(text "Microcontroller\n"
 		(exclude_from_sim no)
-		(at 80.264 124.46 0)
+		(at 37.846 229.362 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5555,6 +5995,16 @@
 			)
 		)
 		(uuid "9d9749bf-e474-44bb-9de8-33a9d9cfd1db")
+	)
+	(text "LEDs\n"
+		(exclude_from_sim no)
+		(at 287.02 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aa00752d-d79b-4e39-8d84-d9f98272a12b")
 	)
 	(text "Crystal Oscillator\n"
 		(exclude_from_sim no)
@@ -5699,6 +6149,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2142b5eb-e799-42d6-97b4-be7216d63c84")
+	)
+	(junction
+		(at 346.71 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21cc31ec-1521-4251-ad17-2004a6cc42e8")
 	)
 	(junction
 		(at 318.77 67.31)
@@ -5899,6 +6355,12 @@
 		(uuid "5b198bf3-cbce-4a1a-b769-1586eeb1960a")
 	)
 	(junction
+		(at 26.67 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d3664f2-8441-4a34-86fc-ff8782cdb02b")
+	)
+	(junction
 		(at 245.11 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5909,6 +6371,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e811c34-6319-4406-8747-0e7a0bf8d0e7")
+	)
+	(junction
+		(at 346.71 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "610ee8be-7e17-4883-ab50-d5fb3ff14bbb")
 	)
 	(junction
 		(at 193.04 49.53)
@@ -5933,6 +6401,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64cd07ae-138a-4d20-b710-e6fe7ef1aeac")
+	)
+	(junction
+		(at 335.28 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "662792fe-5ccf-41d0-9dcf-3b5fa368dcaf")
 	)
 	(junction
 		(at 373.38 67.31)
@@ -5999,6 +6473,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f03a446-742a-44fc-b0e3-8ec72708a5dc")
+	)
+	(junction
+		(at 335.28 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71da5c03-dd43-43ba-98f3-e5b5eeed1654")
 	)
 	(junction
 		(at 115.57 220.98)
@@ -6179,6 +6659,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6398542-22f0-4d0c-9bf4-4f6cfe4b87b5")
+	)
+	(junction
+		(at 325.12 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a79e6d83-d98a-4701-b19e-ad7c35f308c5")
 	)
 	(junction
 		(at 314.96 74.93)
@@ -6373,6 +6859,12 @@
 		(uuid "dfe08df6-bae3-4240-a7e3-ec10a42f22a6")
 	)
 	(junction
+		(at 325.12 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfff2bf0-d2fe-4145-a5c7-3c92c59b7408")
+	)
+	(junction
 		(at 356.87 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6479,20 +6971,12 @@
 		(uuid "658e2c7d-eda9-4c4a-8189-c0b488942fff")
 	)
 	(no_connect
-		(at 90.17 182.88)
-		(uuid "70c568c2-1f55-4061-b4c1-1d8d5e6a38ce")
-	)
-	(no_connect
 		(at 90.17 190.5)
 		(uuid "8ea80c0d-32cd-4d51-a325-6e46ea0c4ca2")
 	)
 	(no_connect
-		(at 91.44 172.72)
-		(uuid "b0ac0bf6-2f77-4c20-ae6c-ed93b8e425d3")
-	)
-	(no_connect
-		(at 90.17 175.26)
-		(uuid "b1fc74a4-a43d-4ff4-ab9b-974c0d009f9d")
+		(at 377.19 189.23)
+		(uuid "c68ddeb4-1214-4636-b8ac-0d17925d8cfa")
 	)
 	(no_connect
 		(at 71.12 45.72)
@@ -6501,6 +6985,10 @@
 	(no_connect
 		(at 71.12 60.96)
 		(uuid "dcb34c7e-837f-4933-9d1d-4250dd605792")
+	)
+	(no_connect
+		(at 195.58 146.05)
+		(uuid "ddc29dcb-eed9-456d-9ca1-ea5ba8fcb220")
 	)
 	(no_connect
 		(at 90.17 195.58)
@@ -6646,6 +7134,16 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 189.23) (xy 339.09 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "102f755e-82eb-4f55-86e0-dd376f345f6e")
+	)
+	(wire
+		(pts
 			(xy 318.77 31.75) (xy 318.77 49.53)
 		)
 		(stroke
@@ -6686,6 +7184,16 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 196.85) (xy 335.28 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "148458ee-ae6c-4095-b610-6ede807e7fb8")
+	)
+	(wire
+		(pts
 			(xy 287.02 57.15) (xy 300.99 57.15)
 		)
 		(stroke
@@ -6713,6 +7221,16 @@
 			(type default)
 		)
 		(uuid "1645bf08-118d-43e8-8c3a-a70d114bf77e")
+	)
+	(wire
+		(pts
+			(xy 346.71 196.85) (xy 369.57 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175258e0-ec84-45dc-a84b-e57d00eaa55d")
 	)
 	(wire
 		(pts
@@ -6946,16 +7464,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 48.26) (xy 43.18 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39225a3f-8b5d-46b0-93b6-b788eeb2a9d0")
-	)
-	(wire
-		(pts
 			(xy 48.26 22.86) (xy 54.61 22.86)
 		)
 		(stroke
@@ -7126,6 +7634,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 181.61) (xy 325.12 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5802fb72-b4df-4803-a0b7-a60ca2801267")
+	)
+	(wire
+		(pts
 			(xy 359.41 49.53) (xy 359.41 102.87)
 		)
 		(stroke
@@ -7223,6 +7741,16 @@
 			(type default)
 		)
 		(uuid "5ebcf878-c6d6-4617-996b-ac3add1c6d0e")
+	)
+	(wire
+		(pts
+			(xy 335.28 196.85) (xy 346.71 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ee7e97e-8cb7-4943-b501-c2fed26dd80c")
 	)
 	(wire
 		(pts
@@ -7476,6 +8004,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 48.26) (xy 50.8 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7987518a-1ace-4cf5-ba12-194598ad6c04")
+	)
+	(wire
+		(pts
 			(xy 213.36 185.42) (xy 215.9 185.42)
 		)
 		(stroke
@@ -7493,6 +8031,16 @@
 			(type default)
 		)
 		(uuid "7ad9b340-4de0-4039-9d1c-513df899030e")
+	)
+	(wire
+		(pts
+			(xy 346.71 181.61) (xy 369.57 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b0bfdf8-f61b-4821-96d2-7a9be37d2ba3")
 	)
 	(wire
 		(pts
@@ -7646,6 +8194,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 175.26) (xy 90.17 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "907232d3-8251-4ad5-9217-98c6b91f2540")
+	)
+	(wire
+		(pts
 			(xy 262.89 25.4) (xy 262.89 31.75)
 		)
 		(stroke
@@ -7783,6 +8341,16 @@
 			(type default)
 		)
 		(uuid "a34124cb-c30e-44db-b6c3-40a3245e6a94")
+	)
+	(wire
+		(pts
+			(xy 335.28 181.61) (xy 346.71 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a542b1b3-7fc2-4b89-abe0-953ddb183561")
 	)
 	(wire
 		(pts
@@ -7946,6 +8514,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 189.23) (xy 317.5 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74c2e79-3cde-4744-a820-440d24d6875f")
+	)
+	(wire
+		(pts
 			(xy 276.86 49.53) (xy 276.86 67.31)
 		)
 		(stroke
@@ -8096,6 +8674,16 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 181.61) (xy 335.28 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c31da4c1-1f81-4a0c-8567-73657eae7da7")
+	)
+	(wire
+		(pts
 			(xy 304.8 31.75) (xy 304.8 49.53)
 		)
 		(stroke
@@ -8103,6 +8691,16 @@
 			(type default)
 		)
 		(uuid "c3b35457-bf25-4fff-a504-00e554e849dd")
+	)
+	(wire
+		(pts
+			(xy 354.33 189.23) (xy 361.95 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c415458e-b9f0-4b82-9a7c-41a374519ba4")
 	)
 	(wire
 		(pts
@@ -8386,6 +8984,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 196.85) (xy 325.12 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8293ed7-2b31-420f-8105-f6716ae10377")
+	)
+	(wire
+		(pts
 			(xy 342.9 57.15) (xy 356.87 57.15)
 		)
 		(stroke
@@ -8473,6 +9081,16 @@
 			(type default)
 		)
 		(uuid "fbd7b62f-a010-4c17-b01e-d49942fb8ff8")
+	)
+	(wire
+		(pts
+			(xy 25.4 48.26) (xy 26.67 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd1ea2f5-ab81-4697-8284-ddc3cf1bf990")
 	)
 	(wire
 		(pts
@@ -9230,28 +9848,6 @@
 			)
 		)
 	)
-	(global_label "RESET"
-		(shape input)
-		(at 195.58 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4ca38bd7-7966-47b4-be22-b7158a0d2827")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.8497 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "D_USB_P"
 		(shape input)
 		(at 120.65 39.37 180)
@@ -9538,6 +10134,28 @@
 			)
 		)
 	)
+	(global_label "BUS_RST"
+		(shape input)
+		(at 90.17 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7962e31b-2468-469c-9053-31a4d055b2b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.9601 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Col 2"
 		(shape input)
 		(at 220.98 25.4 90)
@@ -9644,6 +10262,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BUS_RST"
+		(shape input)
+		(at 25.4 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86e679ab-c853-4628-af20-5856d05b1e03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.1901 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9837,6 +10477,28 @@
 		(uuid "a05fa5f4-6a8e-4b99-98f3-311a95ca3b91")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 312.1562 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB"
+		(shape input)
+		(at 41.91 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "a0df0917-be8b-4828-99fa-53f819a6c9dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.4741 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10352,6 +11014,28 @@
 			)
 		)
 	)
+	(global_label "RGB"
+		(shape input)
+		(at 297.18 189.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "d8acf3bd-f808-4de6-97dd-acf35306f4b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 291.7441 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "INT_LEFT"
 		(shape input)
 		(at 386.08 144.78 180)
@@ -10755,7 +11439,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 217.17 88.9 0)
 			(effects
 				(font
@@ -10952,7 +11636,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 245.11 53.34 0)
 			(effects
 				(font
@@ -11186,6 +11870,82 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 325.12 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05c6e320-17aa-44a7-b69c-7e071e9cf2ed")
+		(property "Reference" "D63"
+			(at 336.55 182.8098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 336.55 185.3498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 326.39 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 327.66 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 325.12 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "7d0f1433-a6eb-4583-8a9d-2e6e97ce53a0")
+		)
+		(pin "3"
+			(uuid "ce3c5f4e-89f2-4079-91de-6b5d8d403223")
+		)
+		(pin "2"
+			(uuid "195060d4-836d-4307-bd44-e384b65f5e3b")
+		)
+		(pin "1"
+			(uuid "13b0a1df-ad7c-4041-bffd-44b48f9a9cdf")
+		)
+		(instances
+			(project "keyboard_v1"
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "D63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 161.29 49.53 90)
 		(unit 1)
@@ -11413,7 +12173,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 328.93 53.34 0)
 			(effects
 				(font
@@ -11852,7 +12612,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 203.2 35.56 0)
 			(effects
 				(font
@@ -12049,7 +12809,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 342.9 53.34 0)
 			(effects
 				(font
@@ -12562,7 +13322,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 300.99 71.12 0)
 			(effects
 				(font
@@ -12759,7 +13519,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 259.08 88.9 0)
 			(effects
 				(font
@@ -13438,7 +14198,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 273.05 53.34 0)
 			(effects
 				(font
@@ -13986,7 +14746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 342.9 106.68 0)
 			(effects
 				(font
@@ -14689,7 +15449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 369.57 53.34 0)
 			(effects
 				(font
@@ -14886,7 +15646,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 245.11 71.12 0)
 			(effects
 				(font
@@ -15083,7 +15843,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 259.08 53.34 0)
 			(effects
 				(font
@@ -15280,7 +16040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 231.14 35.56 0)
 			(effects
 				(font
@@ -15542,7 +16302,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 259.08 35.56 0)
 			(effects
 				(font
@@ -15805,7 +16565,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 245.11 35.56 0)
 			(effects
 				(font
@@ -16001,7 +16761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 322.58 130.81 0)
 			(effects
 				(font
@@ -16312,7 +17072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 383.54 53.34 0)
 			(effects
 				(font
@@ -16509,7 +17269,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 314.96 53.34 0)
 			(effects
 				(font
@@ -16706,7 +17466,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 287.02 88.9 0)
 			(effects
 				(font
@@ -17556,7 +18316,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 203.2 106.68 0)
 			(effects
 				(font
@@ -17912,6 +18672,149 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 335.28 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3190a6d2-0aee-4a11-9c05-7ce64f93a4b3")
+		(property "Reference" "#PWR058"
+			(at 335.28 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 335.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 335.28 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ae5194f-0a77-4deb-9a5d-8fc26184c91c")
+		)
+		(instances
+			(project ""
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74AHCT1G125")
+		(at 54.61 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3202fe86-48b6-4042-8686-ebf46d367dd8")
+		(property "Reference" "U6"
+			(at 69.85 170.3068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHCT1G125"
+			(at 69.85 172.8468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 54.61 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 54.61 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Buffer Gate Tri-State, Low-Voltage CMOS"
+			(at 54.61 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "835f60cb-c1aa-44b4-8019-aaea94bbdaea")
+		)
+		(pin "3"
+			(uuid "8e89cb81-1485-4c68-9e86-e3dcff589775")
+		)
+		(pin "1"
+			(uuid "9e2d9036-12c1-406f-b489-54347733d061")
+		)
+		(pin "2"
+			(uuid "9d846ae2-b3b0-4c32-b37b-f38ae3d87a5d")
+		)
+		(pin "5"
+			(uuid "072bba22-7496-4f26-916d-044394d4edfd")
+		)
+		(instances
+			(project ""
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 228.6 180.34 90)
 		(unit 1)
@@ -18184,7 +19087,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 342.9 35.56 0)
 			(effects
 				(font
@@ -18557,7 +19460,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 287.02 71.12 0)
 			(effects
 				(font
@@ -20267,6 +21170,82 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 304.8 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4660bf43-6924-4a2b-a35a-4319404f92ae")
+		(property "Reference" "D62"
+			(at 316.23 182.8098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 316.23 185.3498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 306.07 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 307.34 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 304.8 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "46508011-70d8-4dc5-bcf0-81e4c864093f")
+		)
+		(pin "3"
+			(uuid "3b4794b9-d78d-483a-80bc-9b595829be26")
+		)
+		(pin "2"
+			(uuid "d3757454-f54a-4bdf-8ba5-3493106014b6")
+		)
+		(pin "1"
+			(uuid "347de6a5-9840-48b3-97e9-845efd0eefbd")
+		)
+		(instances
+			(project ""
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "D62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 31.75 26.67 0)
 		(unit 1)
@@ -20473,7 +21452,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 273.05 71.12 0)
 			(effects
 				(font
@@ -21128,6 +22107,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 335.28 196.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d31ecf4-ce74-48fb-9603-e7a7001bb3b6")
+		(property "Reference" "#PWR059"
+			(at 335.28 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 335.28 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 335.28 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6082fc07-21b3-477f-8088-e844854afcce")
+		)
+		(instances
+			(project ""
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 323.85 67.31 0)
 		(unit 1)
@@ -21401,7 +22446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 356.87 35.56 0)
 			(effects
 				(font
@@ -21729,7 +22774,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 314.96 88.9 0)
 			(effects
 				(font
@@ -22168,7 +23213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 383.54 35.56 0)
 			(effects
 				(font
@@ -22642,7 +23687,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 328.93 35.56 0)
 			(effects
 				(font
@@ -22972,7 +24017,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 356.87 71.12 0)
 			(effects
 				(font
@@ -23345,7 +24390,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 300.99 35.56 0)
 			(effects
 				(font
@@ -23542,7 +24587,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 314.96 35.56 0)
 			(effects
 				(font
@@ -24510,7 +25555,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 356.87 106.68 0)
 			(effects
 				(font
@@ -24883,7 +25928,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 203.2 53.34 0)
 			(effects
 				(font
@@ -25080,7 +26125,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 203.2 71.12 0)
 			(effects
 				(font
@@ -25432,7 +26477,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "77f9f6bd-605e-4da3-bfe7-bae0ad9bfc20")
 		(property "Reference" "C18"
 			(at 294.64 128.2762 0)
@@ -25444,7 +26488,7 @@
 			)
 		)
 		(property "Value" "4.7 uF"
-			(at 294.64 130.8162 0)
+			(at 294.132 131.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25452,7 +26496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 292.1 129.54 0)
 			(effects
 				(font
@@ -26237,7 +27281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 383.54 71.12 0)
 			(effects
 				(font
@@ -26406,6 +27450,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 59.69 165.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83249e56-e775-413f-9e59-fe3e4cbcf0b1")
+		(property "Reference" "#PWR055"
+			(at 59.69 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "356d4f53-3107-4e45-8fff-4b3996d25c1d")
+		)
+		(instances
+			(project ""
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 356.87 53.34 90)
 		(mirror x)
@@ -26436,7 +27546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 356.87 53.34 0)
 			(effects
 				(font
@@ -26599,6 +27709,82 @@
 			(project "keyboard_v1"
 				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
 					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 369.57 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84d6fa79-c931-4e2a-8843-af5fc2ea1402")
+		(property "Reference" "D65"
+			(at 381 182.8098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 381 185.3498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 370.84 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 372.11 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 369.57 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "ce72bc02-0013-4d1d-b142-b031c3a27bad")
+		)
+		(pin "3"
+			(uuid "6b1d6f41-b9e9-4189-9569-d3022caca73d")
+		)
+		(pin "2"
+			(uuid "7de90d63-eb7c-4004-b505-6bccafdc19ad")
+		)
+		(pin "1"
+			(uuid "e8180a19-9e66-40c0-a438-e7b0201da0ed")
+		)
+		(instances
+			(project "keyboard_v1"
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "D65")
 					(unit 1)
 				)
 			)
@@ -26775,6 +27961,82 @@
 			(project "keyboard_v1"
 				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
 					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 346.71 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86f20030-2b00-4bb7-9bd8-9d57cba4f0fe")
+		(property "Reference" "D64"
+			(at 358.14 182.8098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 358.14 185.3498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 347.98 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 349.25 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 346.71 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "e3c21867-ee4a-4a8b-ad3f-98832f766303")
+		)
+		(pin "3"
+			(uuid "bb4c33bb-5b55-4306-aac3-5fb7556a57e9")
+		)
+		(pin "2"
+			(uuid "4aec753f-466d-449e-b9d4-d6f987bc1049")
+		)
+		(pin "1"
+			(uuid "bb0d4e79-17af-48c1-bda2-1aacd1576df9")
+		)
+		(instances
+			(project "keyboard_v1"
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "D64")
 					(unit 1)
 				)
 			)
@@ -27161,7 +28423,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 342.9 88.9 0)
 			(effects
 				(font
@@ -27922,7 +29184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 353.06 132.08 0)
 			(effects
 				(font
@@ -28304,7 +29566,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 231.14 88.9 0)
 			(effects
 				(font
@@ -28637,7 +29899,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 342.9 71.12 0)
 			(effects
 				(font
@@ -28900,7 +30162,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 259.08 71.12 0)
 			(effects
 				(font
@@ -29162,7 +30424,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 231.14 106.68 0)
 			(effects
 				(font
@@ -30492,7 +31754,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 231.14 53.34 0)
 			(effects
 				(font
@@ -30689,7 +31951,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 217.17 106.68 0)
 			(effects
 				(font
@@ -30858,6 +32120,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 54.61 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7673b9a-c5ac-4690-be2e-348f517023fa")
+		(property "Reference" "#PWR056"
+			(at 54.61 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e060f4ab-1945-4284-8827-b72bf5b6a84f")
+		)
+		(instances
+			(project "keyboard_v1"
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 92.71 105.41 0)
 		(unit 1)
@@ -30956,7 +32284,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 300.99 88.9 0)
 			(effects
 				(font
@@ -31639,7 +32967,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 328.93 71.12 0)
 			(effects
 				(font
@@ -31836,7 +33164,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 287.02 35.56 0)
 			(effects
 				(font
@@ -32032,7 +33360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 383.54 106.68 0)
 			(effects
 				(font
@@ -32333,32 +33661,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 48.26 270)
+		(at 26.67 44.45 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b20f53d6-4322-4cb1-87e1-4221e2c18b0e")
 		(property "Reference" "R5"
-			(at 46.99 41.91 90)
+			(at 24.13 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "4.7k"
-			(at 46.99 44.45 90)
+		(property "Value" "10k"
+			(at 24.13 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 46.99 46.482 90)
+			(at 24.892 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32367,7 +33697,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 48.26 0)
+			(at 26.67 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32376,7 +33706,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 48.26 0)
+			(at 26.67 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32385,7 +33715,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32394,7 +33724,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32403,7 +33733,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32412,7 +33742,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32421,7 +33751,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32430,7 +33760,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32439,7 +33769,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32448,7 +33778,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32457,7 +33787,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32466,7 +33796,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32475,7 +33805,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32484,7 +33814,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 46.99 48.26 90)
+			(at 26.67 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32536,7 +33866,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 217.17 71.12 0)
 			(effects
 				(font
@@ -32907,7 +34237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 386.08 132.08 0)
 			(effects
 				(font
@@ -33219,7 +34549,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 328.93 88.9 0)
 			(effects
 				(font
@@ -33416,7 +34746,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 273.05 35.56 0)
 			(effects
 				(font
@@ -33614,7 +34944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 369.57 106.68 0)
 			(effects
 				(font
@@ -34013,7 +35343,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 287.02 53.34 0)
 			(effects
 				(font
@@ -34344,7 +35674,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 300.99 53.34 0)
 			(effects
 				(font
@@ -34717,7 +36047,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 217.17 35.56 0)
 			(effects
 				(font
@@ -34913,7 +36243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 369.57 35.56 0)
 			(effects
 				(font
@@ -35175,7 +36505,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 231.14 71.12 0)
 			(effects
 				(font
@@ -37316,7 +38646,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 39.37 48.26 90)
+		(at 26.67 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -37324,7 +38654,7 @@
 		(dnp no)
 		(uuid "da806b22-83ea-48bc-8acd-526a13c09187")
 		(property "Reference" "#PWR08"
-			(at 43.18 48.26 0)
+			(at 26.67 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37333,7 +38663,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 34.29 48.26 0)
+			(at 22.352 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37341,7 +38671,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 48.26 0)
+			(at 26.67 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37350,7 +38680,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 48.26 0)
+			(at 26.67 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37359,7 +38689,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 39.37 48.26 0)
+			(at 26.67 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38137,7 +39467,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 383.54 88.9 0)
 			(effects
 				(font
@@ -38404,7 +39734,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 203.2 88.9 0)
 			(effects
 				(font
@@ -39158,7 +40488,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 273.05 88.9 0)
 			(effects
 				(font
@@ -39580,6 +40910,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 59.69 185.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecd1ef30-fc58-4f10-9ebd-5a8eb99a64be")
+		(property "Reference" "#PWR057"
+			(at 59.69 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 59.69 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a047ebc0-3cea-44f8-8442-6014cd492207")
+		)
+		(instances
+			(project ""
+				(path "/6bfd3fa9-881c-41d0-8f88-2a2c356ee8ec"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 201.93 185.42 0)
 		(unit 1)
@@ -39744,7 +41140,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 245.11 88.9 0)
 			(effects
 				(font
@@ -40668,7 +42064,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 217.17 53.34 0)
 			(effects
 				(font
@@ -41040,7 +42436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 273.05 106.68 0)
 			(effects
 				(font
@@ -41566,7 +42962,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 314.96 71.12 0)
 			(effects
 				(font
